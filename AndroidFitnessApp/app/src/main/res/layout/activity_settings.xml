@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp">
+
+
+        <RadioGroup
+
+            android:id="@+id/rdiGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+
+                android:id="@+id/rdiEasy"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:text="Beginner"
+                android:theme="@style/MyRadioButton" />
+
+
+            <RadioButton
+
+                android:id="@+id/rdiMedium"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:text="Intermediate"
+                android:theme="@style/MyRadioButton" />
+
+
+            <RadioButton
+
+                android:id="@+id/rdiHard"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:text="Advanced"
+                android:theme="@style/MyRadioButton" />
+
+
+        </RadioGroup>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="539dp"
+        android:background="@color/colorAccent"
+        android:text="Save"
+        android:textColor="#2196F3" />
+
+</RelativeLayout>
